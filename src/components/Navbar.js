@@ -1,16 +1,13 @@
-import useWindowSize from "./useWindowSize";
-
-export function Navbar({ children }) {
+export function Navbar({ isMobile, children }) {
   return (
     <nav className="nav-bar">
-      <Logo />
+      <Logo isMobile={isMobile} />
       {children}
     </nav>
   );
 }
 
-function Logo() {
-  const { isMobile } = useWindowSize();
+function Logo({ isMobile }) {
   return (
     <div className="logo">
       <span role="img">🍿</span>

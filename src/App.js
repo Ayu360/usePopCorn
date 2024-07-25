@@ -7,10 +7,10 @@ import { WatchedSummary } from "./components/WatchedSummary";
 import StarRaiting from "./StarRaiting.js";
 
 import { BallTriangle } from "react-loader-spinner";
-import { useMovies } from "./components/useMovies.js";
-import { useLocalStorageState } from "./components/useLocalStorageState.js";
-import { useKey } from "./components/useKey.js";
-import useWindowSize from "./components/useWindowSize.js";
+import { useMovies } from "./hooks/useMovies.js";
+import { useLocalStorageState } from "./hooks/useLocalStorageState.js";
+import { useKey } from "./hooks/useKey.js";
+import useWindowSize from "./hooks/useWindowSize.js";
 
 const KEY = "a1c6b557";
 export default function App() {
@@ -39,7 +39,7 @@ export default function App() {
 
   return (
     <>
-      <Navbar>
+      <Navbar isMobile={isMobile}>
         <Search query={query} setQuery={setQuery} />
         <NumResult movies={movies} />
       </Navbar>
