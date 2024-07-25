@@ -18,9 +18,6 @@ http://www.omdbapi.com/?i=tt3896198&apikey=${KEY}&s=${query}
 
 
 
-## ⬇️ Netlify Link
-[Click here to open website](https://expo.dev/accounts/ayushninja/projects/snack-73e073c6-2e2d-4ce9-9764-c35f1906030d/builds/b88301cc-f42a-47fe-b6be-34f8f9906d11)
-
 ## 🌟Features
 1. Add Your Fav Movies:
    - Create mutable List of Fav Movies along with your own custom rating.
