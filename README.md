@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# usePopcorn Application 
+This is a react js project that allows it's users to search and find out about their favorite moveis.
+This application was made using: `npx create-react-app`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot 2024-07-25 185014](https://github.com/user-attachments/assets/053582ec-7d83-4719-adfe-9de6b49e72ad)
 
-## Available Scripts
 
-In the project directory, you can run:
+## 🏁 Start the app
+- Install dependencies: `npm i`
 
-### `npm start`
+- native application: `npx expo start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙️ Api 
+- This application uses the following api to fetch movie data:
+```
+http://www.omdbapi.com/?i=tt3896198&apikey=${KEY}&s=${query}
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⬇️ Netlify Link
+[Click here to open website](https://expo.dev/accounts/ayushninja/projects/snack-73e073c6-2e2d-4ce9-9764-c35f1906030d/builds/b88301cc-f42a-47fe-b6be-34f8f9906d11)
 
-### `npm run build`
+## 🌟Features
+1. Add Your Fav Movies:
+   - Create mutable List of Fav Movies along with your own custom rating.
+   - Store data in `LOCAL STORGE`, prevents data loss.
+   - ![Screenshot 2024-07-25 185951](https://github.com/user-attachments/assets/befcc6d1-c187-4c23-bcdb-80837eeb9da8)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Page name set to movie name:
+   - Page Name is automatically change to whatever is Movie name.
+   - ![Screenshot 2024-07-25 190613](https://github.com/user-attachments/assets/f186e6fa-35ad-49dc-88eb-b686de398950)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Aborts the previous query if, new one written fast
+   - Usually for aplications if you write:</br>
+     a. A</br>
+     b. Av</br>
+     c. Ave</br>
+     d. Aveng</br>
+     application calls for result of all 4, but here if Aveng is written before result for Ave appears, all the previous requests will be aborted.
