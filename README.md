@@ -8,7 +8,7 @@ This application was made using: `npx create-react-app`
 ## 🏁 Start the app
 - Install dependencies: `npm i`
 
-- native application: `npx expo start`
+- native application: `npm start`
 
 ## ⚙️ Api 
 - This application uses the following api to fetch movie data:
