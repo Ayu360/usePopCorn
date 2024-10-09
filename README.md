@@ -5,6 +5,9 @@ This application was made using: `npx create-react-app`
 ![Screenshot 2024-07-25 185014](https://github.com/user-attachments/assets/053582ec-7d83-4719-adfe-9de6b49e72ad)
 
 
+## 📹Demo
+[Click here for demo video](https://drive.google.com/file/d/1NifBHZjCH73BIepskxKMJAIF1ZFKsbmG/view?usp=sharing)
+
 ## 🏁 Start the app
 - Install dependencies: `npm i`
 
